@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../prueva de filtros"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "proyectos"
+	}
+}

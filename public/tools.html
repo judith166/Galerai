@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <!-- Metadatos -->
+    <meta charset="UTF-8">
+    <meta name="author" content="Judith Roser">
+    <meta name="description" content="Galeria de herramientas para desarrollo web">
+    <meta name="keywords" content="HTML, CSS, Javascript, Boostrap, tools">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Titulo -->
+    <title>Galerai | Herramientas para el dia a dia de un desarrollador web</title>
+    <!-- Favicon -->
+    <link rel="icon" href="img/favicon.png" type="image/x-icon">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Iconos de Boostrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <!-- CSS personalizado -->
+    <link rel="stylesheet" href="style.css">
+
+
+</head>
+
+<body>
+    <!-- Barra de navegacion -->
+    <nav class="navbar navbar-expand-md navbar-light navbar-light">
+        <div class="container-fluid px-5">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler"
+                aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarToggler">
+                <h1 class="text-gradient"><a class="navbar-brand" href="index.html"><i
+                            class="bi bi-wrench-adjustable-circle-fill"></i>Galerai</a></h1>
+                <ul class="fs-5 navbar-nav d-flex justify-content-center align-items-center">
+                    <li class="fw-semibold nav-item px-4">
+                        <a class="nav-link" aria-current="page" href="info.html"><i
+                                class="bi bi-info-circle-fill"></i>Info</a>
+                    </li>
+                    <li class="fw-semibold nav-item">
+                        <a class="nav-link" aria-current="page" href="tools.html"><i
+                                class="bi bi-brush"></i>Recursos</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Seccion categorias -->
+    <section class="section-badge py-3">
+        <div class="container-badge container-fluid d-flex flex-wrap">
+            <span class="d-flex align-items-center justify-content-center categoria btn btn-light btn-sm m-1"
+                data-categoria="todos"><i class="bi bi-eye"></i>Todo</span>
+
+            <span class="d-flex align-items-center justify-content-center categoria btn btn-light btn-sm m-1"
+                data-categoria="Color"><i class="bi bi-eyedropper"></i>Color</span>
+
+            <span class="d-flex align-items-center justify-content-center categoria btn btn-light btn-sm m-1"
+                data-categoria="Tipografía"><i class="bi bi-file-earmark-font"></i>Tipografía</span>
+
+            <span class="d-flex align-items-center justify-content-center categoria btn btn-light btn-sm m-1"
+                data-categoria="Imagénes"><i class="bi bi-images"></i>Imagénes</span>
+
+            <span class="d-flex align-items-center justify-content-center categoria btn btn-light btn-sm m-1"
+                data-categoria="Iconos"><i class="bi bi-bookmark-star"></i>Iconos</span>
+
+            <span class="d-flex align-items-center justify-content-center categoria btn btn-light btn-sm m-1"
+                data-categoria="CSS"><i class="bi bi-filetype-css"></i>CSS</span>
+
+            <span class="d-flex align-items-center justify-content-center categoria btn btn-light btn-sm m-1"
+                data-categoria="Multitools"><i class="bi bi-tools"></i>MultiTools</span>
+
+        </div>
+    </section class="section-categorias container-fluid m-3">
+
+    <!-- Seccion targetas -->
+
+    <h4 id="categoria-activa" class="h-4 text-center fw-bold fs-2 pt-5"></h4>
+    <section class="section-card row justify-content-center">
+
+    </section>
+    
+    <!-- Seccion Footer -->
+    <footer>
+        <div class="container-fluid text-center p-4 border-top">
+            <h4><i class="bi bi-wrench-adjustable-circle-fill"></i>Galerai</h4>
+            <div class="flex">
+                <p>&copy 2023 Galerai Version 1.0 | Project by <a href="https://twitter.com/juki166"
+                        target="_blank">@judithroser</a></p>
+                <p></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+    <!-- JS  -->
+    <script src="json.js"></script>
+    <script src="./function.js"></script>    
+</body>
+
+</html>

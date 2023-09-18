@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=MuseoModerno:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Encode+Sans:wght@100;300;400;500;600;700;800&family=MuseoModerno:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+/* Seccion Menu - General */
+.navbar {
+    padding: 2rem;
+    background-color: #fff;
+
+}
+
+.navbar-brand {
+    font-family: 'MuseoModerno', cursive;
+    font-weight: 500;
+    font-size: 50px;
+}
+
+.navbar-collapse {
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar-collapse i{
+  padding-right: 10px;
+  color: #a3a3a3;  
+}
+
+.h-inicio {
+    font-family: 'Encode Sans', sans-serif;
+    font-weight: 800;
+    padding-top: 50px;
+    color:#3F3F45;
+}
+/* Seccion Buscador */
+
+.hero-buscador{
+    background-color: #EFF8FF;
+    min-height: 150px;
+    text-align: center;
+    width: 800px;
+    margin: 60px;
+    border-radius: 18px;
+    padding: 10px 50px;
+}
+
+.hero-buscador i{
+    font-size: 2rem;
+    padding-right: 6px;
+    color: #333370;
+    
+}
+
+.hero-buscador h3{
+    font-size: 1.8rem;
+    color: #333370;
+    padding-bottom: 12px;
+    font-family: 'Encode Sans', sans-serif;
+    font-weight: 500;
+}
+
+.btn-bg{
+    background-color: #333370;
+    color:white;
+    padding: 0px 20px;
+}
+
+/* Section categorias - Tools */
+
+#categoria-activa {
+    color:#3F3F45;
+    font-family: 'Encode Sans', sans-serif;
+}
+.categoria {
+    cursor: pointer;
+    font-family: 'Encode Sans', sans-serif;
+    font-weight: 500;
+    width: 170px;
+    height: 60px;
+    font-size: 18px;
+    background-color: #FDE293;
+    color: #3D3723;
+    border-radius: 10px;
+    border: none;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+
+.categoria:hover {
+    background-color: #fff;
+    color: #3D3723;
+    border: none;
+    
+}
+
+.active {
+    background-color: #fff !important;; /* Cambia este color al que desees para el botón activo */
+    color: #3D3723 !important;; /* Cambia este color al que desees para el texto del botón activo */
+    border: none;
+  }
+
+.label-top{
+    background-color: #fd6359;
+}
+
+.label-botton{
+    font-family: 'Encode Sans', sans-serif;
+    font-size: .8rem;
+    background-color: #eeeeee;
+    color: #3D3723;
+}
+
+.tx-free{
+    background-color: #d1fad3;
+}
+
+.section-badge {
+    
+    width: 100%;
+    height: auto;
+}
+
+.container-badge i {
+    font-size: 1.6rem;
+    padding-right:5px;
+    
+}
+
+/* Section targetas - Tools */
+
+.card {
+    
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+}
+.overlay{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+}
+.section-card{
+    margin: 40px;
+    
+    
+}
+
+.card-body h5{
+    color: #3D3723;
+    font-family: 'Encode Sans', sans-serif;
+    font-weight: 400;
+}
+
+.btn-web {
+    background-color: #FDF5DF;
+    color: #3D3723;
+    font-family: 'Encode Sans', sans-serif;
+    font-size: 1rem;
+    border:none;
+}
+
+.btn-web:hover {
+    background-color: #FDE293;
+    border:none;
+}
+
+/* Adaptable (responsive) */
+@media screen and (max-width: 767px){
+    .navbar-brand {
+        display: none;
+    }
+} 
+
+/* Section información -Info */
+.space-info {
+    
+    background-color: #EFF8FF;
+    
+    font-family: 'Encode Sans', sans-serif;
+    font-size: 1.2rem;
+    border-radius: 20px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+
+.img-auto {
+    color: transparent;
+    background-image: linear-gradient(to left, #FEAC5E, #C779D0, #4BC0C8, #C779D0, #FEAC5E);    
+    animation: color 12s linear infinite;
+    background-size: 500%;
+    clip-path: circle(50%);
+    -webkit-text-fill-color: transparent;
+     
+}
+
+.p-info {
+    color:#3F3F45;
+    
+}
+
+/* Transiciones degardado en movimiento */
+
+.text-gradient {
+    font-family: 'MuseoModerno', cursive;
+    color: transparent;
+    background-image: linear-gradient(to left, #FEAC5E, #C779D0, #4BC0C8, #C779D0, #FEAC5E);    
+    animation: color 12s linear infinite;
+    background-size: 500%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;    
+}
+
+@keyframes color {
+    from {
+        background-position: 0% 50%;
+    }
+
+    to {
+        background-position: 100% 50%;
+    }
+}
+
